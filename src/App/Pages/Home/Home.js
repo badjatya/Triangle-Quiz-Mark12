@@ -122,19 +122,19 @@ const Home = () => {
       </Main>
 
       <Footer>
-        <Anchor>
+        <Anchor href="https://www.instagram.com/badjatya/">
           <i className="fa fa-instagram" aria-hidden="true"></i>
         </Anchor>
-        <Anchor>
+        <Anchor href="https://twitter.com/ArchitBadjatya">
           <i className="fa fa-twitter" aria-hidden="true"></i>
         </Anchor>
-        <Anchor>
+        <Anchor href="https://www.linkedin.com/in/badjatya/">
           <i className="fa fa-linkedin" aria-hidden="true"></i>
         </Anchor>
-        <Anchor>
+        <Anchor href="https://github.com/badjatya">
           <i className="fa fa-github" aria-hidden="true"></i>
         </Anchor>
-        <Anchor>
+        <Anchor href="https://www.facebook.com/archit.badjatya">
           <i className="fa fa-facebook" aria-hidden="true"></i>
         </Anchor>
       </Footer>

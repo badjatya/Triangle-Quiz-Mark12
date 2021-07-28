@@ -126,19 +126,19 @@ const Perimeter = () => {
         <InputContainer>
           <Input
             type="number"
-            placeholder="Base"
+            placeholder="Side a"
             value={base}
             onChange={(e) => setBase(e.target.value)}
           />
           <Input
             type="number"
-            placeholder="Hypotenuse"
+            placeholder="Side b"
             value={hypotenuse}
             onChange={(e) => setHypotenuse(e.target.value)}
           />
           <Input
             type="number"
-            placeholder="Perpendicular"
+            placeholder="Side c"
             value={perpendicular}
             onChange={(e) => setPerpendicular(e.target.value)}
           />
