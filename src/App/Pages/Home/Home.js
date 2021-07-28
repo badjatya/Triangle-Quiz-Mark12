@@ -3,6 +3,9 @@ import React from "react";
 // Importing Styled Components
 import styled from "styled-components";
 
+// Importing Components
+import CustomButton from "../../Components/CustomButton/CustomButton";
+
 // Importing Links
 import { Link } from "react-router-dom";
 
@@ -47,23 +50,6 @@ const Description = styled.p`
 const ButtonContainer = styled.div`
   display: flex;
   align-items: center;
-`;
-
-const ButtonPrimary = styled(Link)`
-  display: block;
-  cursor: pointer;
-  background-color: ${Colors.primary};
-  color: ${Colors.white};
-  padding: 1rem 2rem;
-  text-align: center;
-  border-radius: 30px;
-  margin-right: 20px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #f86868;
-  }
 `;
 
 const ButtonSecondary = styled(Link)`
@@ -126,7 +112,7 @@ const Home = () => {
             ut cum.
           </Description>
           <ButtonContainer>
-            <ButtonPrimary to="/quiz">Play Quiz</ButtonPrimary>
+            <CustomButton to="/quiz">Play Quiz</CustomButton>
             <ButtonSecondary to="/area">Calculate Area</ButtonSecondary>
           </ButtonContainer>
         </DetailContainer>
