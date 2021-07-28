@@ -84,26 +84,75 @@ const ButtonSecondary = styled(Link)`
   }
 `;
 
+const Footer = styled.footer`
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  width: 45%;
+`;
+
+const Anchor = styled.a`
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid ${Colors.primary};
+  border-radius: 50%;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${Colors.primary};
+  cursor: pointer;
+
+  &:hover {
+    border: none;
+    background-color: ${Colors.primary};
+    color: ${Colors.white};
+  }
+`;
+
 const Home = () => {
   return (
-    <Main>
-      <DetailContainer>
-        <Heading>Triangle Quiz and area calculator</Heading>
-        <Description>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
-          laudantium et non tempora deserunt placeat impedit sapiente! Facilis
-          est voluptatum quia quibusdam vel neque, veniam illum et eligendi, ut
-          cum.
-        </Description>
-        <ButtonContainer>
-          <ButtonPrimary to="/quiz">Play Quiz</ButtonPrimary>
-          <ButtonSecondary to="/area">Calculate Area</ButtonSecondary>
-        </ButtonContainer>
-      </DetailContainer>
-      <ImageContainer>
-        <Img src={HomeImage} alt="HomeImage" />
-      </ImageContainer>
-    </Main>
+    <div>
+      <Main>
+        <DetailContainer>
+          <Heading>Triangle Quiz and area calculator</Heading>
+          <Description>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore
+            laudantium et non tempora deserunt placeat impedit sapiente! Facilis
+            est voluptatum quia quibusdam vel neque, veniam illum et eligendi,
+            ut cum.
+          </Description>
+          <ButtonContainer>
+            <ButtonPrimary to="/quiz">Play Quiz</ButtonPrimary>
+            <ButtonSecondary to="/area">Calculate Area</ButtonSecondary>
+          </ButtonContainer>
+        </DetailContainer>
+        <ImageContainer>
+          <Img src={HomeImage} alt="HomeImage" />
+        </ImageContainer>
+      </Main>
+
+      <Footer>
+        <Anchor>
+          <i className="fa fa-instagram" aria-hidden="true"></i>
+        </Anchor>
+        <Anchor>
+          <i className="fa fa-twitter" aria-hidden="true"></i>
+        </Anchor>
+        <Anchor>
+          <i className="fa fa-linkedin" aria-hidden="true"></i>
+        </Anchor>
+        <Anchor>
+          <i className="fa fa-github" aria-hidden="true"></i>
+        </Anchor>
+        <Anchor>
+          <i className="fa fa-facebook" aria-hidden="true"></i>
+        </Anchor>
+      </Footer>
+    </div>
   );
 };
 

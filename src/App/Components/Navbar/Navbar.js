@@ -13,6 +13,7 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 35px;
 `;
 
 const Logo = styled(Link)`
