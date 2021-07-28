@@ -85,7 +85,7 @@ const Anchor = styled.a`
   height: 40px;
   border: 1px solid ${Colors.primary};
   border-radius: 50%;
-  margin-right: 15px;
+  margin-right: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
