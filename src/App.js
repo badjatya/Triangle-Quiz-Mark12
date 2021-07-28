@@ -10,6 +10,7 @@ import Navbar from "./App/Components/Navbar/Navbar";
 // Importing Pages
 import Home from "./App/Pages/Home/Home";
 import Area from "./App/Pages/Area/Area";
+import Quiz from "./App/Pages/Quiz/Quiz";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Home} exact />
           <Route path="/area" component={Area} />
+          <Route path="/quiz" component={Quiz} />
         </Switch>
       </BrowserRouter>
     </>

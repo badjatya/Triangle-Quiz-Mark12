@@ -53,7 +53,7 @@ const Navbar = () => {
 
       <Nav>
         <NavItem to="/area">Area</NavItem>
-        <NavItem>Perimeter</NavItem>
+        <NavItem to="/area">Perimeter</NavItem>
       </Nav>
     </NavbarContainer>
   );
