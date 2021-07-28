@@ -3,6 +3,9 @@ import React from "react";
 // Importing Styled Components
 import styled from "styled-components";
 
+// Importing Links
+import { Link } from "react-router-dom";
+
 // Importing Colors
 import Colors from "./../../Constants/Colors";
 
@@ -10,15 +13,15 @@ const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1024px;
-  max-width: 1024px;
-  margin: 10px auto;
 `;
 
-const Logo = styled.p`
+const Logo = styled(Link)`
   color: ${Colors.primary};
   font-weight: 700;
   font-size: 1.2rem;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
 `;
 
 const Nav = styled.nav`
@@ -27,13 +30,12 @@ const Nav = styled.nav`
   align-items: center;
 `;
 
-const NavItem = styled.p`
+const NavItem = styled(Link)`
   display: block;
   text-decoration: none;
   color: ${Colors.primary};
-  padding-bottom: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 
   &:not(:last-child) {
     margin-right: 35px;
@@ -47,10 +49,10 @@ const NavItem = styled.p`
 const Navbar = () => {
   return (
     <NavbarContainer>
-      <Logo>TriangleQuiz</Logo>
+      <Logo to="/">TriangleQuiz</Logo>
 
       <Nav>
-        <NavItem>Area</NavItem>
+        <NavItem to="/area">Area</NavItem>
         <NavItem>Perimeter</NavItem>
       </Nav>
     </NavbarContainer>
